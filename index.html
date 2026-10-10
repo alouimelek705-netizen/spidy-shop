@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Spidy Shop | 3D printed accessories</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&family=Bebas+Neue&family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="web"></canvas>
+
+<header>
+  <a class="brand" href="#home"><div id="logoHeader" class="slot">LOGO</div><span>SPIDY SHOP</span></a>
+  <nav id="nav"></nav>
+  <button class="theme" id="theme" aria-label="Switch between dark and light colors"></button>
+  <button class="cartbtn" id="open">Cart (<span id="n">0</span>)</button>
+</header>
+
+<main id="view"></main>
+
+<div id="modal" role="dialog" aria-modal="true" aria-label="Choose a product"><div class="panel" id="panel"></div></div>
+
+<footer><span class="wet" style="color:var(--red);font-size:1.6rem">SPIDY SHOP</span><span>3D printed in small batches. Orders are confirmed on WhatsApp.</span></footer>
+
+<aside id="drawer" aria-label="Cart">
+  <button class="x" id="close" aria-label="Close cart">&times;</button>
+  <h2>Your cart</h2><div id="lines"></div><strong id="total"></strong>
+  <input id="nm" placeholder="Your name" autocomplete="name">
+  <textarea id="nt" rows="2" placeholder="Notes: color, size, custom text"></textarea>
+  <button class="btn" id="send">Send order on WhatsApp</button>
+</aside>
+
+<script src="config.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
